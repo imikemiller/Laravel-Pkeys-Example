@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "531031d60a068298adac6ae24ea34910",
+    "content-hash": "6b322f7b6f9653749376a3e51f2fa57d",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -783,6 +783,61 @@
                 "random"
             ],
             "time": "2017-03-13T16:27:32+00:00"
+        },
+        {
+            "name": "predis/predis",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nrk/predis.git",
+                "reference": "d72f0678bade78af953605622760fe262d82eb58"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/d72f0678bade78af953605622760fe262d82eb58",
+                "reference": "d72f0678bade78af953605622760fe262d82eb58",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "suggest": {
+                "ext-curl": "Allows access to Webdis when paired with phpiredis",
+                "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Predis\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniele Alessandri",
+                    "email": "suppakilla@gmail.com",
+                    "homepage": "http://clorophilla.net"
+                }
+            ],
+            "description": "Flexible and feature-complete Redis client for PHP and HHVM",
+            "homepage": "http://github.com/nrk/predis",
+            "keywords": [
+                "nosql",
+                "predis",
+                "redis"
+            ],
+            "time": "2017-07-12 14:44:10"
         },
         {
             "name": "psr/log",
@@ -2077,7 +2132,7 @@
                 }
             ],
             "description": "A Laravel wrapper for the Pkeys library.",
-            "time": "2017-07-29T23:08:21+00:00"
+            "time": "2017-07-29 23:08:21"
         },
         {
             "name": "imikemiller/pkeys",
@@ -2116,7 +2171,7 @@
                 }
             ],
             "description": "A key management library to keep your key strings consistent, to avoid your team mates duplicating or overwriting your keys, to protect against typo's and unexpected data types and to stop the crime of inlining keys in your code.",
-            "time": "2017-07-30T18:13:45+00:00"
+            "time": "2017-07-30 18:13:45"
         },
         {
             "name": "mockery/mockery",
@@ -3446,6 +3501,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "predis/predis": 20,
         "imikemiller/laravel-pkeys": 20
     },
     "prefer-stable": false,
