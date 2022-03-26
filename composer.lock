@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "6b322f7b6f9653749376a3e51f2fa57d",
@@ -108,20 +108,24 @@
         },
         {
             "name": "erusev/parsedown",
-            "version": "1.6.3",
+            "version": "1.8.0-beta-7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erusev/parsedown.git",
-                "reference": "728952b90a333b5c6f77f06ea9422b94b585878d"
+                "reference": "fe7a50eceb4a3c867cc9fa9c0aa906b1067d1955"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erusev/parsedown/zipball/728952b90a333b5c6f77f06ea9422b94b585878d",
-                "reference": "728952b90a333b5c6f77f06ea9422b94b585878d",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/fe7a50eceb4a3c867cc9fa9c0aa906b1067d1955",
+                "reference": "fe7a50eceb4a3c867cc9fa9c0aa906b1067d1955",
                 "shasum": ""
             },
             "require": {
+                "ext-mbstring": "*",
                 "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35"
             },
             "type": "library",
             "autoload": {
@@ -146,7 +150,11 @@
                 "markdown",
                 "parser"
             ],
-            "time": "2017-05-14T14:47:48+00:00"
+            "support": {
+                "issues": "https://github.com/erusev/parsedown/issues",
+                "source": "https://github.com/erusev/parsedown/tree/1.8.0-beta-7"
+            },
+            "time": "2019-03-17T18:47:21+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -837,7 +845,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2017-07-12 14:44:10"
+            "time": "2017-07-12T14:44:10+00:00"
         },
         {
             "name": "psr/log",
@@ -2132,7 +2140,7 @@
                 }
             ],
             "description": "A Laravel wrapper for the Pkeys library.",
-            "time": "2017-07-29 23:08:21"
+            "time": "2017-07-29T23:08:21+00:00"
         },
         {
             "name": "imikemiller/pkeys",
@@ -2171,7 +2179,7 @@
                 }
             ],
             "description": "A key management library to keep your key strings consistent, to avoid your team mates duplicating or overwriting your keys, to protect against typo's and unexpected data types and to stop the crime of inlining keys in your code.",
-            "time": "2017-07-30 18:13:45"
+            "time": "2017-07-30T18:13:45+00:00"
         },
         {
             "name": "mockery/mockery",
@@ -3509,5 +3517,6 @@
     "platform": {
         "php": ">=5.6.4"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
 }
